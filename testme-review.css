@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body { font-family: 'Roboto', sans-serif; background-color: #000; background-image: url('wallpaper/luca-bravo-mountains.jpg'); background-size: cover; background-attachment: fixed; color: #fff;}
+p { margin: 0; }
+p.text { margin-bottom: 1em; font-size: .8em;}
+div#titles { background-color: #333; }
+div.fullcardMargin { padding: 10px; page-break-inside: avoid; float: left; }
+div.fullcard { overflow: hidden; border: 1px solid #bbb; padding: 2em; color: #787878; font-size: 1em; line-height: 1.8em; background-color: white; border-radius: .5em; box-shadow: 0px 0px 10px rgba(0,0,0,.3); /*height: 400px;*/ }
+div.flip, div.save { height: 24px; width: 24px; overflow: hidden; background-color: grey; float: right; margin-left: 10px; cursor: pointer; margin-bottom: 12px; border-radius: 50%; }
+div#savedCards div.flip, div#savedCards div.save { display: none; }
+div#configContainer { width: 60%; }
+div.save { background-color: yellowgreen; }
+p.pronunciation { color: orange; text-align: center; }
+p.number { font-size: .8em; color: #aaa; line-height: 1em; }
+p.cardfront { font-size: 2em; line-height: 1em; margin-top: .2em; margin-bottom: .5em; color: #111; text-align: center; clear: both; }
+p.cardback { text-align: center; }
+p.kanjicardback { font-size: 1.8em; line-height: 1.8em; text-align: center; }
+p.kanji { font-size: 3em; font-family: 'Noto Serif', serif; }
+p.englishcardfront { font-size: 1.2em; line-height: 1.5em; overflow: hidden; text-align: left; }
+p.oldkanji { font-size: 3em; float: right; font-family: 'Noto Serif', serif; color: #ccc; margin-left: .2em; margin-bottom: .2em; }
+div.button { padding: 1em; font-size: 1em; background-color: rgba(0,0,0,0.7); cursor: pointer; border-radius: 5px; border: 1px solid rgba(255,255,255, .8); -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+div#listcontainer { margin-bottom: 200px; }
+div#toggleCardBacks { background-color: GreenYellow; color: green;}
+div#menubar { background-color: #222; min-height: 2em; padding: .5em; position: fixed; z-index: 100; bottom: 0px; }
+div#menubar select { float: left; margin: .2em; }
+div#getFocus, div#toggleCardBacks { float: right; }
+
+h1 { sans-serif; font-weight: 400; font-size: 3em; margin: 0; }
+h3 { float: left; font-size: 1.2em; margin-right: 2em; }
+div#savedCards div.fullcard { width: 200px; font-size: .5em; margin: 5px; height: 80px; padding: 0px; }
+div#savedCards div.fullcard p.number { display: none; }
+div#savedCards div.fullcard p.oldkanji { display: none; }
+div#savedCards div.fullcard p.english { display: none; }
+div#savedCards div.fullcard p.reading { display: none; }
+div#savedCards div.fullcard p.romaji { display: none; }
+
+hr { border-top: 1px solid rgba(255, 255, 255, 1); }
+div#printContainer { display: none; }
+div#printContainer div.fullcard { margin: 5px; font-size: .5em; height: 20em; border: 1px solid #eee; }
+
+div#instructions {
+	float: left;
+	padding-left: 20px;
+	font-size: .8em;
+}
+
+@media print {
+	div#listcontainer, div#savedCards, div#titles p, div#titles div.button { display: none; }
+	div#printContainer { display: block; }
+	body { background-image: none; }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+	<head>
+	<meta charset="UTF-8"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>Review</title>
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<!-- /Bootstrap -->
+
+<link rel="stylesheet" href="./testme-review.css">
+
+	</head>
+	<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div id="printContainer" class="col-md-12"></div>
+	</div>
+	<div class="row">
+		<div id="menubar" class="col-md-12">
+			<div id="configContainer">
+				<select id="background-photo" onchange="updateWallpaper()">
+					<option value="luca-bravo-mountains">Luca Bravo: Mountains</option>
+					<option value="2fgvaqx-fxs-oskar-krawczyk">Oscar Krawczyk: Teppan Dining</option>
+					<option value="chineseStreet">Chinese Street</option>
+					<option value="subwayCar">Subway Car</option>
+				</select>
+				<select id="cardcount">
+					<option value="1">1 card</option>
+					<option value="2">2 cards</option>
+					<option value="3">3 cards</option>
+					<option value="4">4 cards</option>
+					<option value="6">6 cards</option>
+					<option value="8">8 cards</option>
+					<option value="9">9 cards</option>
+				</select>
+				<select id="lesson" onchange="updateCardSet()"></select>
+				
+			</div>
+			<div id="instructions">
+				<p>Right arrow key: get next card(s)</p>
+				<p>Space or Enter: flip card(s) to see answer</p>
+				<p>f: Card fronts only (delete backs); b: Card backs only (delete fronts). Refresh to reset.</p>
+				<p>w: Cycle through wallpaper</p>
+				<p>h: Hide this panel</p>
+			</div>
+			<div class="button" id="getFocus">Get Cards</div>
+			<div class="button" id="toggleCardBacks">Toggle Card Backs</div>
+		</div>
+	</div>
+	<div class="row">
+
+	<div id="listcontainer" class="col-md-12"></div>
+
+
+</div> <!-- /container-fluid -->
+
+<script src="./carddata-heavy-rotation.js" /></script>
+<!-- 
+<script src="./carddata-rr-strategies.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-01.js" /></script>
+<script src="./carddata-joyo-kanji-SETS.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-02.js" /></script>
+<script src="./carddata-Newspaper-Vocabulary.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-03.js" /></script>
+<script src="./carddata-TaiwanToday-ch01.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-04.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-05.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-06.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-07.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-08.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-09.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-10.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-11.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-12.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-13.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-14.js" /></script>
+<script src="./carddata-JLPT-N1-Vocabulary-15.js" /></script>
+ -->
+
+<script src="./testme-review.js" /></script>
+
+	</body>
+</html>
